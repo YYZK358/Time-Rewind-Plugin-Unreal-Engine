@@ -1,0 +1,8 @@
+{
+	"OutputFiles": [
+		"Module.TimeRewindPlugin.cpp.obj",
+		"TimeActorManagementSubsystem.cpp.obj",
+		"TimeRewindComponent.cpp.obj",
+		"TimeRewindPlugin.cpp.obj"
+	]
+}
