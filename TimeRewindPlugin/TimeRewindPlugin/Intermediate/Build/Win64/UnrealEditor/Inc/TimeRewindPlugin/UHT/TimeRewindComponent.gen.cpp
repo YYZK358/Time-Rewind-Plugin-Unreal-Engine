@@ -12,7 +12,6 @@ static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compi
 void EmptyLinkFunctionForGeneratedCodeTimeRewindComponent() {}
 
 // ********** Begin Cross Module References ********************************************************
-ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_UActorComponent();
 TIMEREWINDPLUGIN_API UClass* Z_Construct_UClass_UTimeRewindComponent();
 TIMEREWINDPLUGIN_API UClass* Z_Construct_UClass_UTimeRewindComponent_NoRegister();
@@ -130,10 +129,6 @@ struct Z_Construct_UClass_UTimeRewindComponent_Statics
 		{ "IncludePath", "TimeRewindComponent.h" },
 		{ "ModuleRelativePath", "Public/TimeRewindComponent.h" },
 	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Owner_MetaData[] = {
-		{ "Category", "TimeRewindComponent" },
-		{ "ModuleRelativePath", "Public/TimeRewindComponent.h" },
-	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bCanRewind_MetaData[] = {
 		{ "Category", "TimeRewindComponent" },
 		{ "ModuleRelativePath", "Public/TimeRewindComponent.h" },
@@ -149,7 +144,6 @@ struct Z_Construct_UClass_UTimeRewindComponent_Statics
 #endif // WITH_METADATA
 
 // ********** Begin Class UTimeRewindComponent constinit property declarations *********************
-	static const UECodeGen_Private::FObjectPropertyParams NewProp_Owner;
 	static void NewProp_bCanRewind_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_bCanRewind;
 	static void NewProp_bIsRewinding_SetBit(void* Obj);
@@ -174,7 +168,6 @@ struct Z_Construct_UClass_UTimeRewindComponent_Statics
 }; // struct Z_Construct_UClass_UTimeRewindComponent_Statics
 
 // ********** Begin Class UTimeRewindComponent Property Definitions ********************************
-const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UTimeRewindComponent_Statics::NewProp_Owner = { "Owner", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTimeRewindComponent, Owner), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Owner_MetaData), NewProp_Owner_MetaData) };
 void Z_Construct_UClass_UTimeRewindComponent_Statics::NewProp_bCanRewind_SetBit(void* Obj)
 {
 	((UTimeRewindComponent*)Obj)->bCanRewind = 1;
@@ -187,7 +180,6 @@ void Z_Construct_UClass_UTimeRewindComponent_Statics::NewProp_bIsRewinding_SetBi
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UTimeRewindComponent_Statics::NewProp_bIsRewinding = { "bIsRewinding", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(UTimeRewindComponent), &Z_Construct_UClass_UTimeRewindComponent_Statics::NewProp_bIsRewinding_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_bIsRewinding_MetaData), NewProp_bIsRewinding_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UTimeRewindComponent_Statics::NewProp_TimeLineLenght = { "TimeLineLenght", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UTimeRewindComponent, TimeLineLenght), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TimeLineLenght_MetaData), NewProp_TimeLineLenght_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UTimeRewindComponent_Statics::PropPointers[] = {
-	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTimeRewindComponent_Statics::NewProp_Owner,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTimeRewindComponent_Statics::NewProp_bCanRewind,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTimeRewindComponent_Statics::NewProp_bIsRewinding,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UTimeRewindComponent_Statics::NewProp_TimeLineLenght,
@@ -232,15 +224,15 @@ UTimeRewindComponent::~UTimeRewindComponent() {}
 // ********** End Class UTimeRewindComponent *******************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_test_TimeRewindPlugin_TimeRewindPlugin_TimeRewindPlugin_TimeRewindPlugin_TimeRewindPlugin_HostProject_Plugins_TimeRewindPlugin_Source_TimeRewindPlugin_Public_TimeRewindComponent_h__Script_TimeRewindPlugin_Statics
+struct Z_CompiledInDeferFile_FID_test_TimeRewindPlugin_TimeRewindPlugin_HostProject_Plugins_TimeRewindPlugin_Source_TimeRewindPlugin_Public_TimeRewindComponent_h__Script_TimeRewindPlugin_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UTimeRewindComponent, UTimeRewindComponent::StaticClass, TEXT("UTimeRewindComponent"), &Z_Registration_Info_UClass_UTimeRewindComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UTimeRewindComponent), 345858441U) },
+		{ Z_Construct_UClass_UTimeRewindComponent, UTimeRewindComponent::StaticClass, TEXT("UTimeRewindComponent"), &Z_Registration_Info_UClass_UTimeRewindComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UTimeRewindComponent), 1137793034U) },
 	};
-}; // Z_CompiledInDeferFile_FID_test_TimeRewindPlugin_TimeRewindPlugin_TimeRewindPlugin_TimeRewindPlugin_TimeRewindPlugin_HostProject_Plugins_TimeRewindPlugin_Source_TimeRewindPlugin_Public_TimeRewindComponent_h__Script_TimeRewindPlugin_Statics 
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_test_TimeRewindPlugin_TimeRewindPlugin_TimeRewindPlugin_TimeRewindPlugin_TimeRewindPlugin_HostProject_Plugins_TimeRewindPlugin_Source_TimeRewindPlugin_Public_TimeRewindComponent_h__Script_TimeRewindPlugin_529147829{
+}; // Z_CompiledInDeferFile_FID_test_TimeRewindPlugin_TimeRewindPlugin_HostProject_Plugins_TimeRewindPlugin_Source_TimeRewindPlugin_Public_TimeRewindComponent_h__Script_TimeRewindPlugin_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_test_TimeRewindPlugin_TimeRewindPlugin_HostProject_Plugins_TimeRewindPlugin_Source_TimeRewindPlugin_Public_TimeRewindComponent_h__Script_TimeRewindPlugin_914762231{
 	TEXT("/Script/TimeRewindPlugin"),
-	Z_CompiledInDeferFile_FID_test_TimeRewindPlugin_TimeRewindPlugin_TimeRewindPlugin_TimeRewindPlugin_TimeRewindPlugin_HostProject_Plugins_TimeRewindPlugin_Source_TimeRewindPlugin_Public_TimeRewindComponent_h__Script_TimeRewindPlugin_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_test_TimeRewindPlugin_TimeRewindPlugin_TimeRewindPlugin_TimeRewindPlugin_TimeRewindPlugin_HostProject_Plugins_TimeRewindPlugin_Source_TimeRewindPlugin_Public_TimeRewindComponent_h__Script_TimeRewindPlugin_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_test_TimeRewindPlugin_TimeRewindPlugin_HostProject_Plugins_TimeRewindPlugin_Source_TimeRewindPlugin_Public_TimeRewindComponent_h__Script_TimeRewindPlugin_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_test_TimeRewindPlugin_TimeRewindPlugin_HostProject_Plugins_TimeRewindPlugin_Source_TimeRewindPlugin_Public_TimeRewindComponent_h__Script_TimeRewindPlugin_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0,
 };

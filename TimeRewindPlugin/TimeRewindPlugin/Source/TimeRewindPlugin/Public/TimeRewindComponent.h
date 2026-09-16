@@ -28,7 +28,7 @@ class TIMEREWINDPLUGIN_API UTimeRewindComponent : public UActorComponent
 public:	
 	// Sets default values for this component's properties
 	UTimeRewindComponent();
-	UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="TimeRewindComponent")
+	//UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="TimeRewindComponent")
 	AActor* Owner;
 	UStaticMeshComponent *OwnerMesh;
 	UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="TimeRewindComponent")
